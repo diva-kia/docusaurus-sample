@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Lara Croft · Tomb Raider</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Lara Croft is the main protagonist and playable character of the series: she travels the world in search of forgotten artifacts and locations, frequently connected to supernatural powers. While her biography has changed throughout the series, her shared traits are her origins as the only daughter and heir of the aristocratic Croft family. She is portrayed as intelligent, athletic, elegant, fluent in multiple languages, and determined to fulfill her own goals at any cost. She has brown eyes and brown hair worn in a braid or ponytail. The character&#x27;s classic outfit consists of a turquoise singlet, light brown shorts, calf-high boots, and tall white socks. Recurring accessories include fingerless gloves, a backpack, a utility belt with holsters on either side, and twin pistols. Later games have multiple new outfits for her."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Lara Croft · Tomb Raider"/><meta property="og:type" content="website"/><meta property="og:url" content="https://divinekiatan.github.com/docusaurus-sample/"/><meta property="og:description" content="Lara Croft is the main protagonist and playable character of the series: she travels the world in search of forgotten artifacts and locations, frequently connected to supernatural powers. While her biography has changed throughout the series, her shared traits are her origins as the only daughter and heir of the aristocratic Croft family. She is portrayed as intelligent, athletic, elegant, fluent in multiple languages, and determined to fulfill her own goals at any cost. She has brown eyes and brown hair worn in a braid or ponytail. The character&#x27;s classic outfit consists of a turquoise singlet, light brown shorts, calf-high boots, and tall white socks. Recurring accessories include fingerless gloves, a backpack, a utility belt with holsters on either side, and twin pistols. Later games have multiple new outfits for her."/><meta property="og:image" content="https://divinekiatan.github.com/docusaurus-sample/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://divinekiatan.github.com/docusaurus-sample/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docusaurus-sample/img/TR.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docusaurus-sample/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus-sample/css/main.css"/><script src="/docusaurus-sample/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus-sample/en"><img class="logo" src="/docusaurus-sample/img/TR.ico" alt="Tomb Raider"/><h2 class="headerTitleWithLogo">Tomb Raider</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docusaurus-sample/docs/en/about" target="_self">About</a></li><li class="siteNavGroupActive siteNavItemActive"><a href="/docusaurus-sample/docs/en/lara_croft" target="_self">Common Elements</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/docusaurus-sample/img/language.svg" alt="Languages icon"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docusaurus-sample/docs/ja/lara_croft">日本語</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Common Elements</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Common Elements</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus-sample/docs/en/lara_croft">Lara Croft</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-sample/docs/en/gameplay">Gameplay</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Lara Croft</h1></header><article><div><span><p>Lara Croft is the main protagonist and playable character of the series: she travels the world in search of forgotten artifacts and locations, frequently connected to supernatural powers. While her biography has changed throughout the series, her shared traits are her origins as the only daughter and heir of the aristocratic Croft family. She is portrayed as intelligent, athletic, elegant, fluent in multiple languages, and determined to fulfill her own goals at any cost. She has brown eyes and brown hair worn in a braid or ponytail. The character's classic outfit consists of a turquoise singlet, light brown shorts, calf-high boots, and tall white socks. Recurring accessories include fingerless gloves, a backpack, a utility belt with holsters on either side, and twin pistols. Later games have multiple new outfits for her.</p>
+<p><img src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/w830/public/field/image/2018/09/shadow-of-the-tomb-raider-review-3.jpg" alt="alt"></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/docusaurus-sample/docs/en/gameplay"><span>Gameplay</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-sample/" class="nav-home"><img src="/docusaurus-sample/img/TR.ico" alt="Tomb Raider" width="66" height="58"/></a><div><h5>Information</h5><a href="/docusaurus-sample/docs/en/about.html">About</a><a href="/docusaurus-sample/docs/en/lara_croft.html">Common Elements</a></div><div><h5>Links</h5><a href="http://www.tombraider.jp/de/">Official Page</a></div><div><h5>Wikipedia Page</h5><a href="https://en.wikipedia.org/wiki/Tomb_Raider">Wikipedia</a></div></section><section class="copyright">Copyright © 2019 Tomb Raider</section></footer></div></body></html>

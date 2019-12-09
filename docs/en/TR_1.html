@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Tomb Raider I · Tomb Raider</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Tomb Raider is an action-adventure video game developed by Core Design and published by Eidos Interactive. The first instalment in the [Tomb Raider series](/docusaurus-sample/docs/en/about), it was released in 1996 for Sega Saturn, PlayStation, and MS-DOS. Tomb Raider was released for N-Gage devices in 2003, and for the PlayStation Network in North America in August 2009, and in Europe in August 2010. Tomb Raider follows the exploits of Lara Croft, an English archaeologist in search of ancient treasures."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Tomb Raider I · Tomb Raider"/><meta property="og:type" content="website"/><meta property="og:url" content="https://divinekiatan.github.com/docusaurus-sample/"/><meta property="og:description" content="Tomb Raider is an action-adventure video game developed by Core Design and published by Eidos Interactive. The first instalment in the [Tomb Raider series](/docusaurus-sample/docs/en/about), it was released in 1996 for Sega Saturn, PlayStation, and MS-DOS. Tomb Raider was released for N-Gage devices in 2003, and for the PlayStation Network in North America in August 2009, and in Europe in August 2010. Tomb Raider follows the exploits of Lara Croft, an English archaeologist in search of ancient treasures."/><meta property="og:image" content="https://divinekiatan.github.com/docusaurus-sample/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://divinekiatan.github.com/docusaurus-sample/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docusaurus-sample/img/TR.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docusaurus-sample/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus-sample/css/main.css"/><script src="/docusaurus-sample/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus-sample/en"><img class="logo" src="/docusaurus-sample/img/TR.ico" alt="Tomb Raider"/><h2 class="headerTitleWithLogo">Tomb Raider</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docusaurus-sample/docs/en/about" target="_self">About</a></li><li class=""><a href="/docusaurus-sample/docs/en/lara_croft" target="_self">Common Elements</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/docusaurus-sample/img/language.svg" alt="Languages icon"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docusaurus-sample/docs/ja/TR_1">日本語</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Games</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docusaurus-sample/docs/en/about">About Tomb Raider</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Games</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus-sample/docs/en/TR_1">Tomb Raider I</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-sample/docs/en/TR_2">Tomb Raider II</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-sample/docs/en/TR_3">Tomb Raider III</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Tomb Raider I</h1></header><article><div><span><p>Tomb Raider is an action-adventure video game developed by Core Design and published by Eidos Interactive. The first instalment in the <a href="/docusaurus-sample/docs/en/about">Tomb Raider series</a>, it was released in 1996 for Sega Saturn, PlayStation, and MS-DOS. Tomb Raider was released for N-Gage devices in 2003, and for the PlayStation Network in North America in August 2009, and in Europe in August 2010. Tomb Raider follows the exploits of Lara Croft, an English archaeologist in search of ancient treasures.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus-sample/docs/en/about"><span class="arrow-prev">← </span><span>About Tomb Raider</span></a><a class="docs-next button" href="/docusaurus-sample/docs/en/TR_2"><span>Tomb Raider II</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-sample/" class="nav-home"><img src="/docusaurus-sample/img/TR.ico" alt="Tomb Raider" width="66" height="58"/></a><div><h5>Information</h5><a href="/docusaurus-sample/docs/en/about.html">About</a><a href="/docusaurus-sample/docs/en/lara_croft.html">Common Elements</a></div><div><h5>Links</h5><a href="http://www.tombraider.jp/de/">Official Page</a></div><div><h5>Wikipedia Page</h5><a href="https://en.wikipedia.org/wiki/Tomb_Raider">Wikipedia</a></div></section><section class="copyright">Copyright © 2019 Tomb Raider</section></footer></div></body></html>

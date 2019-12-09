@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>About Tomb Raider · Tomb Raider</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## The Game"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="About Tomb Raider · Tomb Raider"/><meta property="og:type" content="website"/><meta property="og:url" content="https://divinekiatan.github.com/docusaurus-sample/"/><meta property="og:description" content="## The Game"/><meta property="og:image" content="https://divinekiatan.github.com/docusaurus-sample/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://divinekiatan.github.com/docusaurus-sample/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docusaurus-sample/img/TR.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docusaurus-sample/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus-sample/css/main.css"/><script src="/docusaurus-sample/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus-sample/en"><img class="logo" src="/docusaurus-sample/img/TR.ico" alt="Tomb Raider"/><h2 class="headerTitleWithLogo">Tomb Raider</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/docusaurus-sample/docs/en/about" target="_self">About</a></li><li class=""><a href="/docusaurus-sample/docs/en/lara_croft" target="_self">Common Elements</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/docusaurus-sample/img/language.svg" alt="Languages icon"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docusaurus-sample/docs/ja/about">日本語</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Introduction</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus-sample/docs/en/about">About Tomb Raider</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Games</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docusaurus-sample/docs/en/TR_1">Tomb Raider I</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-sample/docs/en/TR_2">Tomb Raider II</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-sample/docs/en/TR_3">Tomb Raider III</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">About Tomb Raider</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="the-game"></a><a href="#the-game" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The Game</h2>
+<p><img src="https://upload.wikimedia.org/wikipedia/en/8/81/Tomb_Raider_2011.png" alt="alt text" title="Logo of Tomb Raider"></p>
+<p>Tomb Raider, also known as Lara Croft: Tomb Raider between 2001 and 2007, is a media franchise that originated with an action-adventure video game series created by British gaming company Core Design. Formerly owned by <a href="https://en.wikipedia.org/wiki/Square_Enix_Europe#Eidos_Interactive">Eidos Interactive</a>, then by Square Enix after their acquisition of Eidos in 2009, the franchise focuses on fictional British archaeologist <a href="/docusaurus-sample/docs/en/lara_croft">Lara Croft</a>, who travels around the world searching for lost artifacts and infiltrating dangerous tombs and ruins. Gameplay generally focuses on exploration of environments, solving puzzles, navigating hostile environments filled with traps, and fighting numerous enemies. Additional media has been developed for the franchise in the form of film adaptations, comics and novels.</p>
+<h2><a class="anchor" aria-hidden="true" id="facts"></a><a href="#facts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Facts</h2>
+<blockquote>
+<p>Both the character of Lara Croft and the concepts behind the Tomb Raider franchise have evolved thematically and in popularity since the first game's release in 1996.
+The success of the game series led to several commercial tie-ins that further catapulted to cultural icon status, including feature spin-off games, feature films, and comics</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="titles"></a><a href="#titles" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Titles</h2>
+<p>The first six Tomb Raider games were developed by Core Design, a British video game development company owned by Eidos Interactive. After the sixth game in the series released to a lukewarm reception in 2003, development was transferred to North American studio Crystal Dynamics, who have handled the main series since then. Since 2001, other developers have contributed either to ports of mainline games or with the development of spin-off titles.</p>
+<h3><a class="anchor" aria-hidden="true" id="games"></a><a href="#games" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Games</h3>
+<p>The first entry in the series <a href="/docusaurus-sample/docs/en/TR_1">Tomb Raider</a> was released in 1996 for personal computers (PC), PlayStation and Sega Saturn consoles. The Saturn and PlayStation versions were released in Japan in 1997. The second game, <a href="/docusaurus-sample/docs/en/TR_2">Tomb Raider II</a>, launched in 1997, again for PC and PlayStation. A month before release, Eidos finalised a deal with Sony Computer Entertainment to keep the console version of Tomb Raider II and future games exclusive to PlayStation until the year 2000. The PlayStation version was released in Japan in 1998. <a href="/docusaurus-sample/docs/en/TR_3">Tomb Raider III</a> launched in 1998. As with Tomb Raider II, the PlayStation version released in Japan the following year. The fourth consecutive title in the series, Tomb Raider: The Last Revelation, released in 1999. In 2000, with the end of the PlayStation exclusivity deal, the game also released on the Dreamcast. In Japan, both console versions released the following year. Tomb Raider Chronicles released in 2000 on the same platforms as The Last Revelation, with the PlayStation version's Japanese release as before coming the following year.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/docusaurus-sample/docs/en/TR_1"><span>Tomb Raider I</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#the-game">The Game</a></li><li><a href="#facts">Facts</a></li><li><a href="#titles">Titles</a><ul class="toc-headings"><li><a href="#games">Games</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-sample/" class="nav-home"><img src="/docusaurus-sample/img/TR.ico" alt="Tomb Raider" width="66" height="58"/></a><div><h5>Information</h5><a href="/docusaurus-sample/docs/en/about.html">About</a><a href="/docusaurus-sample/docs/en/lara_croft.html">Common Elements</a></div><div><h5>Links</h5><a href="http://www.tombraider.jp/de/">Official Page</a></div><div><h5>Wikipedia Page</h5><a href="https://en.wikipedia.org/wiki/Tomb_Raider">Wikipedia</a></div></section><section class="copyright">Copyright © 2019 Tomb Raider</section></footer></div></body></html>

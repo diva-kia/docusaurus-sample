@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Gameplay · Tomb Raider</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="The gameplay of Tomb Raider is primarily based around an action-adventure framework, with Lara navigating environments and solving mechanical and environmental puzzles, in addition to fighting enemies and avoiding traps. These puzzles, primarily set within ancient tombs and temples, can extend across multiple rooms and areas within a level. Lara could also swim through water, a rarity in games at the time that has continued through the series.According to original software engineer and later studio manager Gavin Rummery, the original set-up of interlinking rooms was inspired by Egyptian multi-roomed tombs, particularly the tomb of Tutankhamun. The feel of the gameplay was intended to evoke that of the 1989 video game Prince of Persia. In the original games, Lara utilised a &quot;bulldozer&quot; steering set-up, with two buttons pushing her forward and back and two buttons steering her left and right, and in combat Lara automatically locked onto enemies when they came within range. The camera automatically adjusts depending on Lara&#x27;s action, but defaults to a third-person perspective in most instances. This basic formula remained unchanged through the first series of games. Angel of Darkness also added stealth elements."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Gameplay · Tomb Raider"/><meta property="og:type" content="website"/><meta property="og:url" content="https://divinekiatan.github.com/docusaurus-sample/"/><meta property="og:description" content="The gameplay of Tomb Raider is primarily based around an action-adventure framework, with Lara navigating environments and solving mechanical and environmental puzzles, in addition to fighting enemies and avoiding traps. These puzzles, primarily set within ancient tombs and temples, can extend across multiple rooms and areas within a level. Lara could also swim through water, a rarity in games at the time that has continued through the series.According to original software engineer and later studio manager Gavin Rummery, the original set-up of interlinking rooms was inspired by Egyptian multi-roomed tombs, particularly the tomb of Tutankhamun. The feel of the gameplay was intended to evoke that of the 1989 video game Prince of Persia. In the original games, Lara utilised a &quot;bulldozer&quot; steering set-up, with two buttons pushing her forward and back and two buttons steering her left and right, and in combat Lara automatically locked onto enemies when they came within range. The camera automatically adjusts depending on Lara&#x27;s action, but defaults to a third-person perspective in most instances. This basic formula remained unchanged through the first series of games. Angel of Darkness also added stealth elements."/><meta property="og:image" content="https://divinekiatan.github.com/docusaurus-sample/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://divinekiatan.github.com/docusaurus-sample/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docusaurus-sample/img/TR.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docusaurus-sample/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus-sample/css/main.css"/><script src="/docusaurus-sample/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus-sample/en"><img class="logo" src="/docusaurus-sample/img/TR.ico" alt="Tomb Raider"/><h2 class="headerTitleWithLogo">Tomb Raider</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docusaurus-sample/docs/en/about" target="_self">About</a></li><li class="siteNavGroupActive"><a href="/docusaurus-sample/docs/en/lara_croft" target="_self">Common Elements</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/docusaurus-sample/img/language.svg" alt="Languages icon"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docusaurus-sample/docs/ja/gameplay">日本語</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Common Elements</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Common Elements</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docusaurus-sample/docs/en/lara_croft">Lara Croft</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus-sample/docs/en/gameplay">Gameplay</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Gameplay</h1></header><article><div><span><p>The gameplay of Tomb Raider is primarily based around an action-adventure framework, with Lara navigating environments and solving mechanical and environmental puzzles, in addition to fighting enemies and avoiding traps. These puzzles, primarily set within ancient tombs and temples, can extend across multiple rooms and areas within a level. Lara could also swim through water, a rarity in games at the time that has continued through the series.According to original software engineer and later studio manager Gavin Rummery, the original set-up of interlinking rooms was inspired by Egyptian multi-roomed tombs, particularly the tomb of Tutankhamun. The feel of the gameplay was intended to evoke that of the 1989 video game Prince of Persia. In the original games, Lara utilised a &quot;bulldozer&quot; steering set-up, with two buttons pushing her forward and back and two buttons steering her left and right, and in combat Lara automatically locked onto enemies when they came within range. The camera automatically adjusts depending on Lara's action, but defaults to a third-person perspective in most instances. This basic formula remained unchanged through the first series of games. Angel of Darkness also added stealth elements.</p>
+<p><img src="https://www.thetechgame.com/images/news/article/d56f9565f0.jpg" alt="alt"></p>
+<p>For Legend, the control scheme and character movement was redesigned to provide a smooth and fluid experience. One of the key elements present was how buttons for different actions cleanly transitioned into different actions, along with these moves being incorporated into combat to create effects such as stunning or knocking down enemies. Quick-time events were also added into certain segments within each level, and many of the puzzles were based around sophisticated in-game physics. Anniversary, while going through the same locales of the original game, was rebuilt using the gameplay and environmental puzzles of Legend. For Underworld, the gameplay was redesigned around a phrase the staff had put to themselves: &quot;What Could Lara Do?&quot;. Using this set-up, they created a greater variety of moves and greater interaction with the environment, along with expanding and improving combat. The gameplay underwent another major change for the 2013 reboot. Gameplay altered from progression through linear levels to navigating an open world, with hunting for supplies and upgrading equipment and weapons becoming a key part of gameplay, yet tombs where mostly optional and platforming took a back seat to combat. The combat was redesigned to be similar to the Uncharted series: the previous reticle-based lock-on mechanics were replaced by a free-roaming aim. Rise of the Tomb Raider built on the reboot's foundation, adding dynamic weather systems, and reintroducing swimming and non-optional tombs with more platforming elements</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus-sample/docs/en/lara_croft"><span class="arrow-prev">← </span><span>Lara Croft</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-sample/" class="nav-home"><img src="/docusaurus-sample/img/TR.ico" alt="Tomb Raider" width="66" height="58"/></a><div><h5>Information</h5><a href="/docusaurus-sample/docs/en/about.html">About</a><a href="/docusaurus-sample/docs/en/lara_croft.html">Common Elements</a></div><div><h5>Links</h5><a href="http://www.tombraider.jp/de/">Official Page</a></div><div><h5>Wikipedia Page</h5><a href="https://en.wikipedia.org/wiki/Tomb_Raider">Wikipedia</a></div></section><section class="copyright">Copyright © 2019 Tomb Raider</section></footer></div></body></html>
