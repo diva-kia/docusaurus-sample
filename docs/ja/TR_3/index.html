@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>トゥームレイダー III · Tomb Raider</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Tomb Raider III: Adventures of Lara Croft is an action-adventure video game developed by Core Design and published by Eidos Interactive. It was released for the PlayStation and Microsoft Windows platforms in 1998. Tomb Raider III is the third title in the Tomb Raider video game series and a sequel to [Tomb Raider II](/docusaurus-sample/docs/ja/TR_2). The story of the game follows archaeologist-adventurer Lara Croft as she embarks upon a quest to recover four pieces of a meteorite that are scattered across the world. To progress through the game, the player must explore five locations (India, South Pacific, London, Nevada, and Antarctica) and complete a series of levels that involve solving puzzles, traverse dangerous locations, and defeating enemies."/><meta name="docsearch:language" content="ja"/><meta property="og:title" content="トゥームレイダー III · Tomb Raider"/><meta property="og:type" content="website"/><meta property="og:url" content="https://divinekiatan.github.com/docusaurus-sample/"/><meta property="og:description" content="Tomb Raider III: Adventures of Lara Croft is an action-adventure video game developed by Core Design and published by Eidos Interactive. It was released for the PlayStation and Microsoft Windows platforms in 1998. Tomb Raider III is the third title in the Tomb Raider video game series and a sequel to [Tomb Raider II](/docusaurus-sample/docs/ja/TR_2). The story of the game follows archaeologist-adventurer Lara Croft as she embarks upon a quest to recover four pieces of a meteorite that are scattered across the world. To progress through the game, the player must explore five locations (India, South Pacific, London, Nevada, and Antarctica) and complete a series of levels that involve solving puzzles, traverse dangerous locations, and defeating enemies."/><meta property="og:image" content="https://divinekiatan.github.com/docusaurus-sample/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://divinekiatan.github.com/docusaurus-sample/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docusaurus-sample/img/TR.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docusaurus-sample/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus-sample/css/main.css"/><script src="/docusaurus-sample/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus-sample/ja"><img class="logo" src="/docusaurus-sample/img/TR.ico" alt="Tomb Raider"/><h2 class="headerTitleWithLogo">Tomb Raider</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docusaurus-sample/docs/ja/about" target="_self">情報</a></li><li class=""><a href="/docusaurus-sample/docs/ja/lara_croft" target="_self">トゥームレイダーの柱</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/docusaurus-sample/img/language.svg" alt="Languages icon"/>日本語</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/docusaurus-sample/docs/en/TR_3">English</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          if (languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>ゲームシリーズ</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">紹介</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docusaurus-sample/docs/ja/about">トゥームレイダーについて</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">ゲームシリーズ</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docusaurus-sample/docs/ja/TR_1">トゥームレイダー I</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-sample/docs/ja/TR_2">トゥームレイダー II</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus-sample/docs/ja/TR_3">トゥームレイダー III</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">トゥームレイダー III</h1></header><article><div><span><p>Tomb Raider III: Adventures of Lara Croft is an action-adventure video game developed by Core Design and published by Eidos Interactive. It was released for the PlayStation and Microsoft Windows platforms in 1998. Tomb Raider III is the third title in the Tomb Raider video game series and a sequel to <a href="/docusaurus-sample/docs/ja/TR_2">Tomb Raider II</a>. The story of the game follows archaeologist-adventurer Lara Croft as she embarks upon a quest to recover four pieces of a meteorite that are scattered across the world. To progress through the game, the player must explore five locations (India, South Pacific, London, Nevada, and Antarctica) and complete a series of levels that involve solving puzzles, traverse dangerous locations, and defeating enemies.</p>
+<p>Tomb Raider III is built on an upgraded version of the Tomb Raider engine used by its predecessors. The engine offers better speed efficiency and new graphical features such as coloured lighting and triangular polygons, allowing developers to achieve greater detail and more complex geometry. The game was designed to be more in line with the puzzle-solving gameplay of the original Tomb Raider as opposed to the more shooting-oriented style of Tomb Raider II.</p>
+<p>Tomb Raider III was accompanied by an extensive marketing campaign and was a commercial success, selling around six million copies worldwide. Although the game received generally favourable reviews, it did not fare as well as its two predecessors, with critics generally agreeing that the game failed to change the same tried and tested formula. Reviewers also noted the game's difficult and unforgiving gameplay. Eidos released an expansion pack, Tomb Raider III: The Lost Artefact, in 2000. The expansion includes six levels set in several European locations. Tomb Raider III was ported to Mac OS computers in 1999 and was released as a &quot;PSOne Classic&quot; on the PlayStation Network in 2011.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus-sample/docs/ja/TR_2"><span class="arrow-prev">← </span><span>トゥームレイダー II</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-sample/" class="nav-home"><img src="/docusaurus-sample/img/TR.ico" alt="Tomb Raider" width="66" height="58"/></a><div><h5>Information</h5><a href="/docusaurus-sample/docs/ja/about.html">About</a><a href="/docusaurus-sample/docs/ja/lara_croft.html">Common Elements</a></div><div><h5>Links</h5><a href="http://www.tombraider.jp/de/">Official Page</a></div><div><h5>Wikipedia Page</h5><a href="https://en.wikipedia.org/wiki/Tomb_Raider">Wikipedia</a></div></section><section class="copyright">Copyright © 2019 Tomb Raider</section></footer></div></body></html>
